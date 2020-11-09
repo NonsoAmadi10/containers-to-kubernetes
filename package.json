@@ -5,6 +5,9 @@
   "repository": "git@github.com:NonsoAmadi10/containers-to-kubernetes.git",
   "author": "Houdini <nonsoamadi@aol.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/app.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
   }
