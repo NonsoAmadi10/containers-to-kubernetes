@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
-
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 const router = express.Router();
 const path = __dirname + '/views/';
 const port = 8080;
 
+dotenv.config();
 
 router.use(function (req, res, next) {
     console.log('/' + req.method);
