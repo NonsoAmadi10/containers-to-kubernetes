@@ -38,7 +38,7 @@ link">Home</a>
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <p>
             <div class="caption">Some sharks are known to be
                 dangerous to humans, though many more are not. The sawshark, for
@@ -47,7 +47,7 @@ link">Home</a>
             <img src="https://assets.digitalocean.com/articles/docker_node_image/saw
 shark.jpg" alt="Sawshark"></p>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <p>
             <div class="caption">Other sharks are known to be
                 friendly and welcoming!</div>
@@ -55,6 +55,19 @@ shark.jpg" alt="Sawshark"></p>
 my.png" alt="Sammy the Shark">
             </p>
         </div>
+
+        <div class="col-lg-4">
+            <p>
+            <form class="form-group" action="/sharks/addshark" method="post">
+                <div class="caption">Enter Your Shark</div>
+                <input type="text" class="form-control" placeholder="Shark Name" name="name" <%=sharks[i].name; %> <br>
+                <input type="text" class="form-control" placeholder="Shark
+            Character" name="character" <%=sharks[i].character; %> <br />
+                <button class="btn-primary btn" type="submit">Submit</button>
+            </form>
+            </p>
+        </div>
+
     </div>
 </div>
 
